@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Job Request Form</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="form-wrapper">
+    <div class="form-header">
+      <img src="logo.png" alt="Company Logo" class="logo">
+      <h2>Job Request Form</h2>
+    </div>
+    <form id="jobForm">
+      <label>Job Title* <input type="text" name="jobTitle" required /></label>
+      <label>Job Req ID* <input type="text" name="jobReqId" required /></label>
+      <label>Number of Position* <input type="number" name="positions" required /></label>
+      <label>Job Location* <input type="text" name="location" required /></label>
+      <label>Job Type*
+        <select name="jobType" required>
+          <option value="">Select</option>
+          <option value="Permanent">Permanent</option>
+          <option value="Contract">Contract</option>
+        </select>
+      </label>
+      <label>Job Description*
+        <textarea name="jobDescription" maxlength="10000" required></textarea>
+      </label>
+      <label>Primary Skill* <input type="text" name="primarySkill" required /></label>
+      <label>Job Open For*
+        <select name="jobOpenFor" required>
+          <option value="">Select</option>
+          <option value="External">External</option>
+          <option value="Internal">Internal</option>
+          <option value="Internal & External">Internal & External</option>
+        </select>
+      </label>
+      <label>Client*
+        <select name="client" required>
+          <option value="">Select</option>
+          <option value="SCB">SCB</option>
+          <option value="Capgemini MY">Capgemini MY</option>
+          <option value="Accenture">Accenture</option>
+          <option value="DHL">DHL</option>
+          <option value="Cognizant">Cognizant</option>
+        </select>
+      </label>
+      <div class="salary-range">
+        <label>Salary Range*</label>
+        <div class="salary-fields">
+          <input type="text" name="minSalary" placeholder="Minimum" required />
+          <input type="text" name="maxSalary" placeholder="Maximum" required />
+        </div>
+      </div>
+      <label>Assign To Recruiter Mail ID*
+        <select name="recruiterMail" required>
+          <option value="">Select</option>
+          <option value="recruiter1@example.com">recruiter1@example.com</option>
+          <option value="recruiter2@example.com">recruiter2@example.com</option>
+        </select>
+      </label>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
